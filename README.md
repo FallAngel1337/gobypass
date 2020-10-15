@@ -1,3 +1,6 @@
+
+[![Text All](https://res.cloudinary.com/practicaldev/image/fetch/s--ZmWHP0Bg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.postimg.cc/VLdgRJXF/Clipart-Key-2207878.png)
+
 # GoBypass
 [![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
 [![GolangCI](https://golangci.com/badges/github.com/moul/golang-repo-template.svg)](https://golangci.com/r/github.com/moul/golang-repo-template)
@@ -8,26 +11,31 @@
 **[Here's how you can install Go](https://golang.org/doc/install)**
 
 ## From source:
-```
-$ git clone https://github.com/FallAngel1337/gobypass.git
-$ cd gobypass
-$ go build
-$ ./gobypass -h
-```
+| command | description |
+| --- | --- |
+|$ git clone https://github.com/FallAngel1337/gobypass.git| Command to download gobypass!!|
+|$ cd gobypass| enter the gobypass directory!!|
+|$ go build|  
+|$ ./gobypass -h|
+
 
 ## Using go get:
-```
-$ go get -v github.com/FallAngel1337/gobypass
-```
+
+| command | description|
+| --- | --- | 
+|$ go get -v github.com/FallAngel1337/gobypass | Install in go get |
+
 
 # How to use
+| command | description|
+| --- | --- |
+|gobypass -u <urls403.txt> -t 5| A simple tool made in Go that try bypass 403 restrictions|
+|cat urls403.txt | gobypass -t 5| take the exit and play inside the program|
 
-```
-gobypass -u <urls403.txt> -t 5
-cat urls403.txt | gobypass -t 5
-```
 
 # Found an error or a suggestion?
-/ Pls contact me :) \
+| contact | Twiiter |
+| --- | --- |
+| Fall |  @FallAngel10 |
 
-![Text Alert](https://miro.medium.com/max/500/1*_wxwNuxszA6vwQIUMbF-fw.gif)
+![Text Alert](https://vsoch.github.io/assets/images/posts/learning-go/gophercises_jumping.gif)
