@@ -10,7 +10,6 @@ import (
 	"time"
 )
 
-//CheckError do stuff
 func CheckError(err error) {
 	if err != nil {
 		log.Fatal(err)
@@ -55,7 +54,6 @@ func getRandomAgent() string {
 	return useragents[random.Intn(len(useragents))]
 }
 
-//Bypass do stuff
 func Bypass(urls *[]string, wg *sync.WaitGroup) {
 	defer wg.Done()
 	client := http.Client{
