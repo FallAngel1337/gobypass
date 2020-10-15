@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/gobypass"
+	"github.com/FallAngel1337/gobypass"
 )
 
 var (
