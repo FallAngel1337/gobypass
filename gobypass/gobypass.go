@@ -8,6 +8,7 @@ import (
 	"os"
 	"sync"
 	"time"
+	"crypto/tls"
 )
 
 func CheckError(err error) {
@@ -57,6 +58,7 @@ func getRandomAgent() string {
 func Bypass(urls *[]string, wg *sync.WaitGroup) {
 	defer wg.Done()
 	client := http.Client{
+		Transport: &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}},
 		Timeout: time.Second * 5,
 	}
 	for _, url := range *urls {
