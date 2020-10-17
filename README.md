@@ -12,7 +12,7 @@
 
 ## Using go get:
 
-`$ go get -v github.com/FallAngel1337/gobypass`
+`$ go get -u -v github.com/FallAngel1337/gobypass`
 
 
 # How to use
