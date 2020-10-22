@@ -1,5 +1,5 @@
 
-![Text All](https://res.cloudinary.com/practicaldev/image/fetch/s--ZmWHP0Bg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.postimg.cc/VLdgRJXF/Clipart-Key-2207878.png)
+![Text Alert](https://vsoch.github.io/assets/images/posts/learning-go/gophercises_jumping.gif)
 
 # GoBypass
 [![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
@@ -26,5 +26,3 @@
 | contact | Twiiter |
 | --- | --- |
 | Fall |  @FallAngel10 |
-
-![Text Alert](https://vsoch.github.io/assets/images/posts/learning-go/gophercises_jumping.gif)
