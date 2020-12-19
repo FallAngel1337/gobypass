@@ -58,7 +58,7 @@ func GetRandomAgent() string {
 		log.Fatal(err)
 	}
 
-	useragent := strings.Split(string(useragents), "\n")[random.Intn(100)]
+	useragent := strings.Split(string(useragents), "\n")[random.Intn(len(useragents))]
 	useragent = useragent[:len(useragent)-1]
 	return useragent
 }
