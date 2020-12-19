@@ -9,8 +9,6 @@ import (
 	"time"
 
 	"github.com/FallAngel1337/gobypass/pkg/errors"
-
-	// "github.com/vbauerster/mpb"
 	"github.com/gookit/color"
 )
 
@@ -37,7 +35,6 @@ func checkCode(url, method string, resp *http.Response, output chan<- string) {
 }
 
 func methodBypass(url string, client http.Client, output chan<- string) {
-	//useragent := "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36"
 	useragent := GetRandomAgent()
 
 	req, err := http.NewRequest("GET", url, nil)
@@ -114,7 +111,6 @@ func methodBypass(url string, client http.Client, output chan<- string) {
 
 func headerBypass(url string, client http.Client, output chan<- string) {
 	req, _ := http.NewRequest("GET", url, nil)
-	//useragent := "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36"
 	useragent := GetRandomAgent()
 	req.Header.Add("User-Agent", useragent)
 	for name, value := range BypassHeaders.Header {
@@ -126,7 +122,7 @@ func headerBypass(url string, client http.Client, output chan<- string) {
 	}
 }
 
-//Bypass try byass the restrictions
+//Bypass try bypass the restrictions
 func Bypass(urls <-chan string, output chan<- string, wg *sync.WaitGroup) {
 	defer wg.Done()
 
@@ -156,6 +152,8 @@ func Bypass(urls <-chan string, output chan<- string, wg *sync.WaitGroup) {
 
 			fmt.Printf("\n%v Trying using headers...\n\n", blue("[*]"))
 			headerBypass(url, client, output)
+		} else {
+			fmt.Println(red("[-]"), "No 403 found!")
 		}
 	}
 }
