@@ -16,16 +16,10 @@
 
 
 # Options
-| command | description | Ex |
+| command | description | Ex|
 | --- | --- |
-| `-urls` | (Optional) The list containing the 403 urls | `gobypass -urls 403_urls.txt` |
-| `-threads` | The number of threads (default 1) | `gobypass -urls 403_urls.txt -threads 5` |
-| `-timeout` | The timeout for the connection in seconds (default 5) | `gobypass -urls 403_urls.txt -timeout 10` |
-| `-v` |  Enable verbose mode | `gobypass -urls 403_urls.txt -v` |
-| `cat urls_403.txt \| gobypass -v` | Read input from stdin |
-
-
-# Found an error or a suggestion?
-| contact | Twiiter |
-| --- | --- |
-| Fall |  @FallAngel10 |
+| `-urls` | (Optional) The list containing the 403 urls | `gobypass -urls 403_urls.txt`|
+| `-threads` | The number of threads (default 1) | `gobypass -urls 403_urls.txt -threads 5`|
+| `-timeout` | The timeout for the connection in seconds (default 5) | `gobypass -urls 403_urls.txt -timeout 10`|
+| `-v` |  Enable verbose mode | `gobypass -urls 403_urls.txt -v`|
+| `cat urls_403.txt \| gobypass -v` | Read input from stdin|
