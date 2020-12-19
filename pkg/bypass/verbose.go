@@ -145,6 +145,8 @@ func Verbose(urls <-chan string, output chan<- string, wg *sync.WaitGroup) {
 			fmt.Printf("\n%v Trying using headers...\n\n", blue("[*]"))
 			headerBypassV(url, client, output)
 
+		} else {
+			fmt.Println(red("[-]"), "No 403 found!")
 		}
 	}
 }
