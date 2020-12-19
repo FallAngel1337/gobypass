@@ -29,8 +29,7 @@ func main() {
 	bypass.BypassHeaders.LoadDefaultHeaders()
 	bypass.SetTimeout(timeout)
 	var reader *bufio.Scanner
-	var bypassFunc func(urls <-chan string, output chan<- string, wg *sync.WaitGroup) // gambiarra
-
+	var bypassFunc func(urls <-chan string, output chan<- string, wg *sync.WaitGroup)
 	if urls != "" {
 		fn, _ := os.Open(urls)
 		reader = bufio.NewScanner(fn)
