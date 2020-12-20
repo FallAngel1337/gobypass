@@ -30,7 +30,10 @@ func main() {
 	bypass.SetTimeout(timeout)
 	var reader *bufio.Scanner
 	var bypassFunc func(urls <-chan string, output chan<- string, wg *sync.WaitGroup)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 57758553da0b4ccfdbecab6354ec95f3e40fea8c
 	if urls != "" {
 		fn, _ := os.Open(urls)
 		reader = bufio.NewScanner(fn)
