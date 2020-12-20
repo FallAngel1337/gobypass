@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 	"math/rand"
+	"os"
 	"path/filepath"
 	"strings"
 	"time"
@@ -48,7 +49,7 @@ func (h *Headers) AddHeader(name, value string) {
 // GetRandomAgent return a string with a random user-agent
 func GetRandomAgent() string {
 	random := rand.New(rand.NewSource(time.Now().UnixNano()))
-	file, err := filepath.Abs("user-agents/user-agents.txt")
+	file, err := filepath.Abs(os.Getenv("GOPATH") + "/src/github.com/FallAngel1337/gobypass/user-agents/user-agents.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
