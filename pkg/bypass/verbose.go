@@ -35,16 +35,16 @@ func createNewRequestV(url, method, ua string, client *http.Client, output chan<
 func methodBypassV(url string, client *http.Client, output chan<- string) {
 	useragent := GetRandomAgent()
 
-	createNewRequest(url, "GET", useragent, client, output)
-	createNewRequest(url, "POST", useragent, client, output)
-	createNewRequest(url, "PUT", useragent, client, output)
-	createNewRequest(url, "TRACE", useragent, client, output)
-	createNewRequest(url, "OPTIONS", useragent, client, output)
-	createNewRequest(url, "DELETE", useragent, client, output)
-	createNewRequest(url, "HEAD", useragent, client, output)
-	createNewRequest(url, "TRACK", useragent, client, output)
-	createNewRequest(url, "CONNECT", useragent, client, output)
-	createNewRequest(url, "PATCH", useragent, client, output)
+	createNewRequestV(url, "GET", useragent, client, output)
+	createNewRequestV(url, "POST", useragent, client, output)
+	createNewRequestV(url, "PUT", useragent, client, output)
+	createNewRequestV(url, "TRACE", useragent, client, output)
+	createNewRequestV(url, "OPTIONS", useragent, client, output)
+	createNewRequestV(url, "DELETE", useragent, client, output)
+	createNewRequestV(url, "HEAD", useragent, client, output)
+	createNewRequestV(url, "TRACK", useragent, client, output)
+	createNewRequestV(url, "CONNECT", useragent, client, output)
+	createNewRequestV(url, "PATCH", useragent, client, output)
 }
 
 func headerBypassV(url string, client *http.Client, output chan<- string) {
